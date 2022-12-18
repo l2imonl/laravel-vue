@@ -1,0 +1,15 @@
+.comment{
+  position: relative;
+  width: 100%;
+}
+
+.comment-border{
+  border-left: 2px solid #ced4da;
+  position: absolute;
+  top: 10ch;
+  bottom: 0;
+}
+
+.comment-button{
+  display: block;
+}

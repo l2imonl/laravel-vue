@@ -1,0 +1,108 @@
+$pagination: #FF4081;
+$pagination-activ: #cf3468;
+.toggle {
+  margin: auto;
+  display: flex;
+  position: relative;
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+  }
+
+  a {
+    &:hover {
+      color: lightgray;
+      text-decoration: none;
+    }
+  }
+
+  button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: white;
+
+    &:hover {
+      color: lightgray;
+      text-decoration: none;
+    }
+
+  }
+
+  //input {
+  //    display: none;
+  //    @for $i from 1 through 5 {
+  //        &#toggle-#{$i}:checked ~ .label-#{$i} {
+  //            width: 120px;
+  //            @media screen and (max-width: 700px) {
+  //                height: 120px;
+  //                width: auto;
+  //            }
+  //        }
+  //    }
+  //}
+
+  .label {
+    width: 80px;
+    height: 25px;
+    margin: 0 10px;
+    border-radius: 999px;
+    background: $pagination;
+    cursor: pointer;
+    box-shadow: 0 5px 5px -5px rgba($pagination, 0.15),
+    0 10px 10px -5px rgba($pagination, 0.15),
+    0 15px 15px -5px rgba($pagination, 0.15),
+    0 20px 20px -5px rgba($pagination, 0.15);
+    transition: 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px;
+    @media screen and (max-width: 1200px) {
+      width: 70px;
+      height: 30px;
+      margin: 20px 0;
+    }
+    @media screen and (max-width: 992px) {
+      width: 60px;
+      height: 40px;
+      margin: 20px 0;
+    }
+    @media screen and (max-width: 765px) {
+      width: 46px;
+      height: 60px;
+      margin: 10px 0;
+    }
+  }
+
+  .active{
+    background: $pagination-activ;
+    box-shadow: 0 5px 5px -5px rgba($pagination-activ, 0.15),
+    0 10px 10px -5px rgba($pagination-activ, 0.15),
+    0 15px 15px -5px rgba($pagination-activ, 0.15),
+    0 20px 20px -5px rgba($pagination-activ, 0.15);
+  }
+
+  .pagination{
+    margin: auto;
+  }
+
+  .pagination-items {
+    @media screen and (max-width: 1200px) {
+
+    }
+    @media screen and (max-width: 992px) {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    @media screen and (max-width: 765px) {
+
+    }
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+}

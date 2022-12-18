@@ -1,0 +1,17 @@
+@import "variables";
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+@import "mixins";
+@import "global";
+@import "navbar";
+@import "masthead";
+@import "pagination";
+@import "post";
+@import "contact";
+@import "footer";
+//@import "bootstrap-overrides.scss";
+@import "profile-photo";
+@import "loading";
+@import "comment";
+@import "flashMessage";
+
